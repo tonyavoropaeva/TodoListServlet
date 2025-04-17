@@ -1,15 +1,14 @@
-package ru.academits.voropaeva.todolistservlet.servlets;
+package ru.academits.voropaeva.todo_list_servlet.servlets;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.apache.commons.text.StringEscapeUtils;
-import ru.academits.voropaeva.todolistservlet.data.TodoItem;
-import ru.academits.voropaeva.todolistservlet.data.TodoItemsInMemoryRepository;
-import ru.academits.voropaeva.todolistservlet.data.TodoItemsRepository;
+import ru.academits.voropaeva.todo_list_servlet.data.TodoItem;
+import ru.academits.voropaeva.todo_list_servlet.data.TodoItemsInMemoryRepository;
+import ru.academits.voropaeva.todo_list_servlet.data.TodoItemsRepository;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -111,6 +110,5 @@ public class TodoListServlet extends HttpServlet {
             }
         }
         resp.sendRedirect(getServletContext().getContextPath() + "/");
-
     }
 }

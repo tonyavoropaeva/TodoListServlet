@@ -1,4 +1,4 @@
-package ru.academits.voropaeva.todolistservlet.data;
+package ru.academits.voropaeva.todo_list_servlet.data;
 
 import java.util.List;
 
